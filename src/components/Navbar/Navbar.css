@@ -1,0 +1,75 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .navbar__buttons {
+    display: flex;
+  }
+  
+  .navbar__buttons button {
+    margin-right: 1rem;
+  }
+  
+  .navbar__buttons button:last-child {
+    margin-right: 0;
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: .85vw;
+  }
+
+  svg {
+    font-size: 1.5vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+  }
+
+svg {
+    transition: transform 0.2s ease-out;
+  }
+  
+  svg:hover {
+    transform: translateY(-5px);
+  }
+  
+  
+  /*
+    Font Options
+    Helvetica
+    Arial 
+    Open Sans
+    Roboto
+    Lato
+    Montserrat
+    Proxima Nova
+    Futura
+    Raleway
+    Gotham
+  */
+
+  .navbar-item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .navbar-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.2s ease-out;
+  }
+  
+  .navbar-item:hover::after {
+    width: 100%;
+  }
+  

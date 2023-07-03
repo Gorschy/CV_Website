@@ -1,0 +1,15 @@
+.home {
+    display: flex;
+    width: 100%;
+  }
+  
+  .home__left {
+    flex: 1;
+    background-color: red;
+  }
+  
+  .home__right {
+    flex: 1;
+    background-color: blue;
+  }
+  
