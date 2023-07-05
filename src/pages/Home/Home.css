@@ -1,15 +1,75 @@
 .home {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.home__left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.home__left img {
+  max-width: 90%;  /* Prevents the image from overflowing */
+  height: auto;
+}
+
+.home__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Aligned left */
+  text-align: left; /* Text aligned left */
+  padding: 20px; /* adjust as needed for outer spacing */
+}
+
+.home__buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjust as needed for space between elements */
+}
+
+
+.home__right h2 {
+  font-size: 2rem; /* Adjust as needed */
+}
+
+.home__right h3 {
+  font-size: 1.5rem; /* Adjust as needed */
+}
+
+@media (max-width: 992px) {
+  .home {
+    flex-direction: column;
   }
-  
-  .home__left {
-    flex: 1;
-    background-color: red;
+
+  .home__right h2 {
+    font-size: 1.5rem;
   }
-  
-  .home__right {
-    flex: 1;
-    background-color: blue;
+
+  .home__right h3 {
+    font-size: 1.2rem;
   }
-  
+
+  .home__left img {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .home__right h2 {
+    font-size: 1.2rem;
+  }
+
+  .home__right h3 {
+    font-size: 1rem;
+  }
+
+  .home__left img {
+    max-width: 50%;
+  }
+}

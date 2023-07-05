@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import { Link } from 'react-router-dom';
 
-import SVGAnimation from '../../components/Navbar/ThemeMoon';
+import "./Navbar.css";
+import Toggle from "./Toggle";
+
 
 
 function Navbar() {
@@ -14,9 +16,9 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar__buttons">
-        <button className="navbar-item">Home</button>
-        <button className="navbar-item">About</button>
-        <button className="navbar-item">Projects</button>
+        <Link to="/"><button className="navbar-item">Home</button></Link>
+        <Link to="/about"><button className="navbar-item">About</button></Link>
+        <Link to="/projects"><button className="navbar-item">Projects</button></Link>
       </div>
       <div>
 
@@ -64,7 +66,7 @@ function Navbar() {
 
       
       
-        <SVGAnimation />
+        <Toggle />
       </div>
     </nav>
   );
