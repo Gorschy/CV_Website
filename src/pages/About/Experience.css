@@ -1,0 +1,30 @@
+.experience {
+  text-align: left;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto; 
+  padding: 20px; 
+}
+
+.experience h1 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px; 
+}
+
+.experience div {
+  margin-bottom: 15px; 
+}
+
+.experience h2 {
+  font-size: 1.5em; 
+  margin-bottom: 10px; 
+}
+
+.experience p {
+  font-size: 1.2em; 
+  line-height: 1.4; 
+}

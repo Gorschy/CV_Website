@@ -1,6 +1,8 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import Unit_Converter from './Assets/Unit_Converter.PNG'
+import './Projects.css'
+
 const Projects = () => {
   // Replace this with actual data
   const projects = [
@@ -19,6 +21,7 @@ const Projects = () => {
       ))}
     </div>
   );
+
 };
 
 export default Projects;

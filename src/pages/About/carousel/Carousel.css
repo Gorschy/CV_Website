@@ -1,0 +1,62 @@
+.carousel {
+    overflow: hidden;
+    max-width: 2496px; /* Adjust to your image total width, here 4*624px assuming each image has a width of 624px */
+    position: relative;
+    border-left: 0.5vw solid  rgba(0,0,0,0.5);
+    border-right: 0.5vw solid  rgba(0,0,0,0.5);
+    margin: 2vw; 
+}
+
+.carousel-inner {
+    white-space: nowrap;
+    transition: ease 1s;
+}
+
+.carousel-item {
+    display: inline-block;
+    width: 25%; /* Adjust to your image width, assuming it's 1/4 of the carousel width */
+}
+
+.carousel-control {
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    display: inline-block;
+    position: absolute;
+    height: 7.5%;
+    width: 10.5%;
+    top: calc(50% - 25px);
+    color: #f3f3f3;
+    cursor: pointer;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.carousel-indicators {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    bottom: 1.5em;
+    z-index: 2;
+}
+
+.carousel-indicator-item {
+    width: 15px;
+    height: 15px;
+    border: none;
+    background: #595959;
+    opacity: 0.5;
+    margin: 0.2em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active {
+    opacity: 1;
+}
+

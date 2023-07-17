@@ -1,0 +1,15 @@
+.project-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em; /* adjust to the gap you want */
+    margin-left: 15em;
+    margin-right: 15em;
+    margin-top: 7.5em;
+    margin-bottom: 7.5em;
+}
+
+.project-card {
+    /* Removed flex-basis */
+    box-sizing: border-box;
+    padding: 1em;
+}

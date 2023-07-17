@@ -12,6 +12,26 @@
   padding: 20px;
 }
 
+.resume-button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 7.5px;
+}
+
+.resume-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contact-button {
+  text-decoration: underline;
+}
+
 .home__left img {
   max-width: 90%;  /* Prevents the image from overflowing */
   height: auto;
@@ -29,8 +49,7 @@
 
 .home__buttons {
   display: flex;
-  align-items: center;
-  gap: 20px; /* Adjust as needed for space between elements */
+  align-items: center; /* Adjust as needed for space between elements */
 }
 
 

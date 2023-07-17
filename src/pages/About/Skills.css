@@ -1,0 +1,7 @@
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Or you can set it to another value, like '100vh' */
+  }
+  

@@ -1,0 +1,30 @@
+.education {
+  text-align: left;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto; 
+  padding: 20px; 
+}
+
+.education h1 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px; 
+}
+
+.education div {
+  margin-bottom: 15px; 
+}
+
+.education h2 {
+  font-size: 1.5em; 
+  margin-bottom: 10px; 
+}
+
+.education p {
+  font-size: 1.2em; 
+  line-height: 1.4; 
+}
