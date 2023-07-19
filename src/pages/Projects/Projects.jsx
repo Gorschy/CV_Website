@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import Unit_Converter from './Assets/Unit_Converter.PNG'
+import Unit_Converter from './Assets/Unit_Converter.png'
 import './Projects.css'
 
 const Projects = () => {
