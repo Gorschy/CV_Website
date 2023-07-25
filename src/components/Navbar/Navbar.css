@@ -58,4 +58,8 @@ svg:hover {
 .navbar-item:hover::after {
   width: 100%;
 }
+
+.navbar a {
+  color: black;
+}
   

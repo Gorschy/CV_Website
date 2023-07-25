@@ -3,7 +3,7 @@ function Footer() {
     return(
         <footer>
             <div class="copyright">
-                <p>Copyright &copy; NG Portfolio</p>
+                <p>© 2023 NathanG, Inc.</p>
             </div>
         </footer>
     );

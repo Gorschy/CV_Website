@@ -21,11 +21,22 @@
   padding: 10px 20px;
   transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 7.5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none; /* Removes underline */
 }
 
 .resume-button:hover {
   background-color: white;
   color: black;
+}
+
+a.resume-link {
+  text-decoration: none;
+  color: inherit; /* Ensures the color of the link text matches surrounding text */
 }
 
 .contact-button {
@@ -53,12 +64,12 @@
 }
 
 
-.home__right h2 {
-  font-size: 2rem; /* Adjust as needed */
+.home__right h1 {
+  font-size: 4rem; /* Adjust as needed */
 }
 
-.home__right h3 {
-  font-size: 1.5rem; /* Adjust as needed */
+.home__right p {
+  font-size: 2rem; /* Adjust as needed */
 }
 
 @media (max-width: 992px) {
@@ -66,11 +77,11 @@
     flex-direction: column;
   }
 
-  .home__right h2 {
+  .home__right h1 {
     font-size: 1.5rem;
   }
 
-  .home__right h3 {
+  .home__right p {
     font-size: 1.2rem;
   }
 
@@ -80,11 +91,11 @@
 }
 
 @media (max-width: 576px) {
-  .home__right h2 {
+  .home__right h1 {
     font-size: 1.2rem;
   }
 
-  .home__right h3 {
+  .home__right p {
     font-size: 1rem;
   }
 

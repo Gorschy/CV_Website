@@ -12,9 +12,10 @@ function Home() {
       <div className="home__right">
         {/* content for the right div */}
 
-        <h2>Welcome! I'm Nathan Gorsch</h2> 
-        <h3>A full-stack developer with a passion for AI and game development. My portfolio showcases my expertise in React.js, Python, C++, and deploying projects using AWS. Let's transform your ideas into innovative web applications. Reach out and let's make meaningful contributions to technology together.</h3>
+        <h1>Welcome! I'm Nathan Gorsch</h1> 
+        <p>A full-stack developer with a passion for AI and game development. My portfolio showcases my expertise in React.js, Python, C++, and deploying projects using AWS. Let's transform your ideas into innovative web applications. Reach out and let's make meaningful contributions to technology together.</p>
         <div className="home__buttons">
+        <a href={`${process.env.PUBLIC_URL}/resume.pdf`} download className='resume-link'>
         <button className='resume-button'>
               Resume
           <svg xmlns="http://www.w3.org/2000/svg" width="0.75em" height="0.75em" viewBox="0 0 24 24">
@@ -23,8 +24,10 @@ function Home() {
           </svg>
             
         </button>
-
-          <button className='contact-button'>Contact</button>
+        </a>
+        <button className='contact-button' onClick={() => window.open('mailto:nathan.gorsch@outlook.com')}>
+          Contact
+        </button>
         </div>
       </div>
     </div>
