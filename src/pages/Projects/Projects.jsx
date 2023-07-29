@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import Unit_Converter from './Assets/unit_converter.png'
+import PyDoKu from './Assets/PyDoKu.png'
 import './Projects.css'
 
 const Projects = () => {
@@ -20,9 +21,9 @@ const Projects = () => {
     },
     { 
       title: 'PyDoKu', 
-      image: 'image2.png', 
+      image: PyDoKu, 
       description: 'Description for project 3.',
-      link: '#', // Placeholder for actual link
+      link: 'https://pydoku.s3.ap-southeast-2.amazonaws.com/PyDoKu.exe', // Placeholder for actual link
     },
     { 
       title: 'Canvas: Text, Particles & Animations', 
