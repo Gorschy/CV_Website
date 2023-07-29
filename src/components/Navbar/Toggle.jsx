@@ -1,7 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Toggle = () => {
   const [darkMode, setDarkMode] = useState(false);
+
+  // Runs every time darkMode state changes
+  useEffect(() => {
+    if (darkMode) {
+      // Setting the CSS variables for dark mode
+      document.documentElement.style.setProperty("--active-bg-color", "#2A272A");
+      document.documentElement.style.setProperty("--active-text-color", "white");
+      document.documentElement.style.setProperty("--active-button-color", "white");
+      document.documentElement.style.setProperty("--active-button-text-color", "black");
+      document.documentElement.style.setProperty("--active-highlight-color", "white");
+
+
+    } else {
+      // Setting the CSS variables for light mode
+      document.documentElement.style.setProperty("--active-bg-color", "#F5F5F5");
+      document.documentElement.style.setProperty("--active-text-color", "black");
+      document.documentElement.style.setProperty("--active-button-color", "black");
+      document.documentElement.style.setProperty("--active-button-text-color", "white");
+      document.documentElement.style.setProperty("--active-highlight-color", "black");
+
+    }
+  }, [darkMode]);
 
   const LightModeSVG = () => (
     <svg

@@ -2,8 +2,8 @@
     overflow: hidden;
     max-width: 2496px; /* Adjust to your image total width, here 4*624px assuming each image has a width of 624px */
     position: relative;
-    border-left: 0.5vw solid  rgba(0,0,0,0.5);
-    border-right: 0.5vw solid  rgba(0,0,0,0.5);
+    border-left: 0.5vw solid  var(--active-highlight-color);
+    border-right: 0.5vw solid  var(--active-highlight-color);
     margin: 2vw; 
 }
 
@@ -18,15 +18,16 @@
 }
 
 .carousel-control {
-    background-color: rgba(0,0,0,0.5);
+    background-color: var(--active-highlight-color);
     border: none;
     display: inline-block;
     position: absolute;
     height: 7.5%;
     width: 10.5%;
     top: calc(50% - 25px);
-    color: #f3f3f3;
+    color: var(--active-button-text-color);
     cursor: pointer;
+    opacity: 0.5;
 }
 
 .left {
@@ -49,7 +50,7 @@
     width: 15px;
     height: 15px;
     border: none;
-    background: #595959;
+    background: var(--active-highlight-color);
     opacity: 0.5;
     margin: 0.2em;
     border-radius: 50%;

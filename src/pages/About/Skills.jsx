@@ -13,7 +13,6 @@ const Skills = () => {
   window.addEventListener('resize', () => {
     svgWidthInPixels = window.innerWidth * 0.85;
     svgHeightInPixels = window.innerHeight * 0.85;
-    // Update the node target positions here...
 });
 
 
@@ -66,7 +65,6 @@ const Skills = () => {
       { label: 'Teamwork', size: nodeSize, color: 'black', radius: nodeDistance, speed: 0.04 },
       { label: 'Organization', size: nodeSize, color: 'black', radius: nodeDistance, speed: 0.04 },
       { label: 'Quick-Learner', size: nodeSize, color: 'black', radius: nodeDistance, speed: 0.04 },
-      // The rest of your nodes go here...
     ];
 
     console.log(nodes);
@@ -111,7 +109,7 @@ const Skills = () => {
         .attr('y1', nodes[0].y) // y position of first end of the line, center node's y position
         .attr('x2', (d) => d.x) // x position of second end of the line, the other node's x position
         .attr('y2', (d) => d.y) // y position of second end of the line, the other node's y position
-        .attr('stroke', 'black') // color of the line
+        .attr('stroke', 'var(--active-highlight-color)') // color of the line
         .attr('stroke-width', 0.5); // thickness of the line
 
       const u = d3
@@ -126,7 +124,7 @@ const Skills = () => {
       .attr("height", (d) => d.size)
       .attr("rx", (d) => d.size / 2)
       .attr("ry", (d) => d.size / 2)
-      .attr("fill", (d) => d.color)
+      .attr("fill", "var(--active-button-color)")
       // then, when opening the modal:
       .on("click", (event, i) => {
         const d = event.target.__data__;
@@ -146,7 +144,7 @@ const Skills = () => {
       .text((d) => d.label)
       .attr("font-size", "10px")
       .attr("text-anchor", "middle")
-      .attr("fill", "white")
+      .attr("fill", "var(--active-button-text-color)")
       .on("click", (event, i) => {
         const d = event.target.__data__;
         console.log("Clicked on:", d, i);

@@ -13,8 +13,8 @@
 }
 
 .resume-button {
-  background-color: black;
-  color: white;
+  background-color: var(--active-button-color);
+  color: var(--active-button-text-color);
   border: none;
   cursor: pointer;
   margin: 10px;
@@ -29,11 +29,6 @@
   text-decoration: none; /* Removes underline */
 }
 
-.resume-button:hover {
-  background-color: white;
-  color: black;
-}
-
 a.resume-link {
   text-decoration: none;
   color: inherit; /* Ensures the color of the link text matches surrounding text */
@@ -41,6 +36,7 @@ a.resume-link {
 
 .contact-button {
   text-decoration: underline;
+  color: var(--active-text-color);
 }
 
 .home__left img {
