@@ -1,5 +1,6 @@
 import React from 'react';
 import './Biography.css'; //Make sure to import your CSS file
+import Bachelors from './Bachelors.png';
 
 const Biography = () => {
   return (
@@ -38,7 +39,7 @@ const Biography = () => {
         </p>
       </div>
       <div className="div2">
-        This is div 2
+        <img src={Bachelors}></img>
       </div>
     </div>
   );
