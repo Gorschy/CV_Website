@@ -1,4 +1,6 @@
 .project-card {
+    width: 25vw;  /* Adjust as needed */
+    height: 25vh; /* Adjust as needed */
     border-color: var(--active-highlight-color);
     border-style: solid;
     border-width: 2px 10px 20px 10px;
@@ -18,11 +20,63 @@
 }
 
 .project-card img {
-    width: 100%;
-    height: auto;
+    width: 100%;  /* Takes up the full width of the project-card */
+    height: 55%;  /* Adjust as needed, this will take up 60% of the project-card's height */
+    object-fit: cover; /* This ensures that the image covers the space without distortion */
     border-radius: 8px 8px 0 0; 
 }
 
 .project-card h2 {
-    margin-top: 16px;
+    font-size: 1.5vw; /* Adjust as needed */
+    /* ... other styles ... */
+}
+
+.project-card p {
+    font-size: 1vw; /* Adjust as needed */
+    /* ... other styles ... */
+}
+
+
+
+
+
+/* Smaller screens */
+@media (max-width: 768px) {
+    .project-card {
+        width: 75vw;
+        height: 35vh;
+    }
+    .project-card h2 {
+        font-size: 3.5vw;
+    }
+    .project-card p {
+        font-size: 3vw;
+        margin: 0;
+    }
+
+    .project-card span {
+        font-size: 2.5vw;
+        margin: 1.5vw;
+        color: #a9a9a9;
+    }
+}
+
+/* Larger screens */
+@media (min-width: 769px) {
+    .project-card {
+        width: 35vw;  /* Adjust as needed */
+        height: 40vh; /* Adjust as needed */
+    }
+    .project-card h2 {
+        font-size: 1.5vw;
+    }
+    .project-card p {
+        font-size: 1vw;
+    }
+
+    .project-card span {
+        font-size: .75vw;
+        margin: .5vw;
+        color: #a9a9a9;
+    }
 }

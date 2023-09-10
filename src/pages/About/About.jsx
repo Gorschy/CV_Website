@@ -2,7 +2,6 @@ import React from 'react';
 import Education from './Education';
 import Skills from './Skills';
 import Experience from './Experience';
-import AdvancedScrollProgressBar from './AdvancedScrollProgressBar'; 
 import Carousel from "./carousel/Carousel";
 import Biography from './Biography';
 
@@ -33,7 +32,6 @@ const About = () => {
   return (
     <div className="about">
       <div style={{ display: "flex" }}>
-        <AdvancedScrollProgressBar />
         <div>
           <Biography />
           <Carousel slides={slides} controls indicators interval={6000} autoPlay={true}/>

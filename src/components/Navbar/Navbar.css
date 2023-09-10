@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  height: 5vh;
 }
   
 .navbar__buttons {
@@ -21,17 +22,14 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  font-size: .85vw;
+  font-size: clamp(12px, .85vw, 18px); /* Minimum: 12px, Preferred: .85vw, Maximum: 18px */
 }
 
 svg {
-  font-size: 1.5vw;
+  font-size: clamp(20px, 1.5vw, 30px); /* Minimum: 20px, Preferred: 1.5vw, Maximum: 30px */
   margin-left: 0.5vw;
   margin-right: 0.5vw;
-}
-
-svg {
-    transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 svg:hover {

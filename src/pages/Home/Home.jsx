@@ -13,7 +13,7 @@ function Home() {
         {/* content for the right div */}
 
         <h1>Welcome! I'm Nathan Gorsch</h1> 
-        <p>A full-stack developer with a passion for AI and game development. My portfolio showcases my expertise in React.js, Python, C++, and deploying projects using AWS. Let's transform your ideas into innovative web applications. Reach out and let's make meaningful contributions to technology together.</p>
+        <p>A full-stack developer with a passion for artificial intelligence, game development and web interconectivity. This online portfolio was built to showcase my expertise in a multitude of technologies including React, Python, C++ and AWS. Please have a look around feel free to reach out for collaboration, inquiries or general feedback as it is always welcome in this everevolving industry.</p>
         <div className="home__buttons">
         <a href={`${process.env.PUBLIC_URL}/resume.pdf`} download className='resume-link'>
         <button className='resume-button'>
