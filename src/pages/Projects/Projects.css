@@ -1,27 +1,7 @@
 .project-page {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5vw; /* adjust to the gap you want */
-    margin: 7.5vw; /* Adjust as needed */
-}
-
-.project-card {
-    /* Removed flex-basis */
-    box-sizing: border-box;
-    padding: 1em;
-}
-
-/* Mobile view: 1 card per row */
-@media (max-width: 768px) {
-    .project-page {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Tablet view: 2 cards per row */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .project-page {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
 }
 

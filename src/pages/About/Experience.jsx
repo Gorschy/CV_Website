@@ -4,7 +4,7 @@ import './Experience.css'; //Make sure to import your CSS file
 const Experience = () => {
   return (
     <div class="experience">
-       <h1>Education</h1>
+       <h1>Experience</h1>
         <h2>Sage Natural Cleaning – Wollongong, Contract Employee</h2>
         <p><strong>October 2022 – Current</strong>: As an independent contract employee, I effectively manage various tasks, adapt to client needs, and coordinate with Sage Operations. I uphold cleanliness standards, maintain client relationships, and handle financial matters like invoicing and expense tracking.</p>
 
