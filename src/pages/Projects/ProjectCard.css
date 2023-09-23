@@ -20,30 +20,39 @@
     border: 2px solid #ccc;
 }
 
+.icon-container {
+    display: flex;
+    justify-content: space-between; /* This will push the icons to the far ends */
+    align-items: center; /* This will vertically center the icons */
+}
+
+.icon-container a {
+    display: flex; /* This ensures the icons respect the flex properties */
+    align-items: center; /* This will vertically center the icons */
+}
+
+.project-card img {
+    width: clamp(20px, 5vw, 40px);  /* min: 20px, preferred: 5vw, max: 100px */
+    height: clamp(20px, 5vh, 40px); /* min: 20px, preferred: 5vh, max: 100px */
+    aspect-ratio: 1 / 1;
+    margin-bottom: 1.5vh;
+}
+
+
 .project-card:hover {
     /* Raise the card up */
     transform: translateY(-5px);
-
     /* Adjust the box-shadow to give a more pronounced effect */
     box-shadow: 
         5px 5px 0px 0px #333,  /* First shadow, closer to the card */
         10px 10px 0px 0px #111;  /* Second shadow, further from the card */
-
     /* Optional: Add a background color or border to highlight the card */
     background-color: #f9f9f9;  /* This is a very light gray, adjust as needed */
 }
 
-.project-card img {
-    width: 2.5vw;
-    height: 2.5vh;
-    aspect-ratio: 1 / 1;
-    
-    margin: 1.5%;
-}
-
-
 .project-card p {
     flex-grow: 1;
+    font-size: clamp(12px, 2vw, 18px);
 }
 
 .project-card h3 {

@@ -6,33 +6,27 @@ const Biography = () => {
   return (
     <div className="biography">
       <div className="div1">
-        <p>
-        Hello, I'm Nathan, a versatile professional with a deep interest for AI and game development, as well as a serious commitment to website interconnectivity.  With a Bachelor's degree in Computer Science (Software Engineering) from the University of Wollongong, I've acquired a solid foundation in programming languages including Java, C++, Python, and front-end web technologies such as HTML, CSS, and JavaScript.
-        </p>
 
-        <p>
-        I've had the privilege to apply these skills to a more professional experience compared to my academic projects, which involved co-leading a software development project for an environmentally conscious web application at Lord of the Trees.
-        </p>
-
-        <p>
-        These experiences have allowed me to acquire proficiency in AWS Microservices and GitHub, developing effective strategies for version control including implementing a CI/CD pipeline, software collaboration in a larger team.
-        </p>
-
-        <p>
-        Aside from my technical skills, I bring strong communication skills, a high level of adaptability, and a dedication to organization and task prioritization to every role. Whether it's managing a project using Jira, Agile, and Waterfall methodologies, I am well equipped to make significant contributions in a range of professional environments.
-        </p>
-
-        <p>
-        Take a look around my portfolio to learn more about my projects, experiences, and the skills I bring to the table. If you'd like to discuss how my skills can benefit your team, please don't hesitate to get in touch.
-        </p>
-
-        <p>
-        Welcome, and thank you for visiting!
-        </p>
-
-        <p>
-        <strong>Nathan Gorsch</strong>
-        </p>
+        <div className='biography-card'>
+          <p>
+            Hello, I'm Nathan, a versatile professional with a interest for AI, game development and the world wide web. With a Bachelor's degree in Computer Science (Software Engineering) from the University of Wollongong, I've acquired a solid foundation in programming languages including C++, Python,  front-end web technologies such as HTML, CSS, and JavaScript.
+          </p>
+          <p>
+            During my university years, I had the opportunity to collaborate on diverse projects, ranging from intimate teams of 2-3 members to larger groups of 6-8. A standout experience was the "Restoration Project Platform (RPP)", a carbon calculator designed for environmentally-minded individuals and organizations. Developed over my final year, this project was a collaborative effort with our contractor, Lord of the Trees.
+          </p>
+          <p>
+            The RPP project enriched my expertise in full-stack application development, by introducing technologies such as cloud services, Continuous Integration and Continuous Delivery (CICD) pipeline for iterative development and producing and consuming apis to take user data to the next level. Our team held weekly stand-ups, and we rotated leadership roles to ensure everyone garnered comprehensive experience. This has lead me to be the well rounded software developer I am today. 
+          </p>
+          <p>
+            Take a look around my portfolio to see  more about my projects, experiences, and the skills I bring to the table. If you'd like to discuss how my skills can benefit your team, please don't hesitate to get in touch.
+          </p>
+          <p>
+            Thank you for stopping by!
+          </p>
+          <p>
+            <strong>Nathan Gorsch</strong>
+          </p>
+        </div>
       </div>
       <div className="div2">
         <img src={Bachelors}></img>

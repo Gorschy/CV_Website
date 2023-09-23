@@ -4,7 +4,8 @@
     position: relative;
     border-left: 0.5vw solid  var(--active-highlight-color);
     border-right: 0.5vw solid  var(--active-highlight-color);
-    margin: 7.5vw;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
     margin-top: 2.5vw;
 }
 

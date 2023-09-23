@@ -5,6 +5,8 @@ import Experience from './Experience';
 import Carousel from "./carousel/Carousel";
 import Biography from './Biography';
 
+import "./About.css"
+
 import pic1 from "./carousel/assets/1.png";
 import pic2 from "./carousel/assets/2.png";
 import pic3 from "./carousel/assets/3.png";
@@ -34,9 +36,15 @@ const About = () => {
       <div style={{ display: "flex" }}>
         <div>
           <Biography />
+          <div className='background-alternate'>
           <Carousel slides={slides} controls indicators interval={6000} autoPlay={true}/>
+          <p className='carousel-tag'><span className="text-background">LinkedIn Certificates</span></p>
+          </div>
           <Skills />
+          <div className='education-background'>
           <Education />
+          </div>
+          
           <Experience />
         </div>
       </div>
