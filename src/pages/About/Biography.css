@@ -7,8 +7,7 @@
   flex: 1;  /* You can adjust these values to allocate space as needed */
   padding: 2.5vw;
   padding-left: 10vw;
-  margin-right: 10vw;
-  margin-top: 10vw;
+  margin-top: 5vw;
   margin-bottom: 10vw;
   background-color: #D3F2FF;
 }
@@ -22,14 +21,36 @@
 }
 
 .div2 {
-  flex: 1;  /* You can adjust these values to allocate space as needed */
-  margin: 10vw;
+  flex: 1;
+  margin-right: 7.5vw;
+  display: flex;  /* Add this */
+  align-items: center;  /* This will vertically center the vertical lines and the image */
 }
-
 
 .div2 img {
   max-width: 100%;
   height: 60vh; /* Adjusts the height automatically based on the width to maintain the image's aspect ratio */
+}
+
+.vertical-line-1 {
+  width: 1px;  /* This determines the thickness of the vertical line */
+  height: 60%;  /* This determines the height of the vertical line */
+  background-color: black;  /* This determines the color of the vertical line */
+  margin: 2.5vw;
+  margin-bottom: 15vw;  /* This centers the line if its container has a specific width */
+}
+
+.vertical-line-2 {
+  width: 1px;  /* This determines the thickness of the vertical line */
+  height: 55%;  /* This determines the height of the vertical line */
+  background-color: black;  /* This determines the color of the vertical line */
+  margin: 2.5vw;
+  margin-top: 20vw;  /* This centers the line if its container has a specific width */
+}
+
+.certification-heading {
+  margin: 2.5vw;
+  margin-top: 5vw;
 }
 
 p {

@@ -33,12 +33,14 @@ const About = () => {
 
   return (
     <div className="about">
+      <h1 className='about-heading'>Who Am I?</h1>
+      <hr className='about-heading-line'></hr>
       <div style={{ display: "flex" }}>
         <div>
           <Biography />
+          <h1 className='linkedin-heading'>LinkedIn Certification</h1>
           <div className='background-alternate'>
           <Carousel slides={slides} controls indicators interval={6000} autoPlay={true}/>
-          <p className='carousel-tag'><span className="text-background">LinkedIn Certificates</span></p>
           </div>
           <Skills />
           <div className='education-background'>

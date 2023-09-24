@@ -66,6 +66,7 @@ const Projects = () => {
           title={project.title} 
           description={project.description} 
           onClick={() => window.open(project.link)}
+          link={project.link}
           tags={project.tags}
           githubLink={project.githubLink}
           linkType={project.linkType}

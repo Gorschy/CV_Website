@@ -29,7 +29,14 @@ const Biography = () => {
         </div>
       </div>
       <div className="div2">
+
+        <div class="vertical-line-1"></div>
+        <div class="vertical-line-2"></div>
+
+        <div>
+        <h1 className='certification-heading'>My Certification</h1>
         <img src={Bachelors}></img>
+        </div>
       </div>
     </div>
   );
