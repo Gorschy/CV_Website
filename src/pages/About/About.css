@@ -23,5 +23,11 @@
 }
 
 .linkedin-heading {
-    margin: 5vw;
+    margin: 2.5vw;
+    margin-left: 7.5vw;
+}
+
+.linkedin-heading-line {
+    margin-bottom: 2.5vw;
+    width: 80%;
 }

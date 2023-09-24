@@ -167,7 +167,7 @@ const Skills = () => {
   return (
     <div>
       <div className="svg-container">
-        <svg ref={ref} width="85vw" height="85vh" />
+        <svg className='skill-svg'ref={ref} width="85vw" height="85vh" />
       </div>
       <Modal
         isOpen={modalOpen}

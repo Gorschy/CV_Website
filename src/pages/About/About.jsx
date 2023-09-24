@@ -39,10 +39,15 @@ const About = () => {
         <div>
           <Biography />
           <h1 className='linkedin-heading'>LinkedIn Certification</h1>
+          <hr className='linkedin-heading-line'></hr>
           <div className='background-alternate'>
           <Carousel slides={slides} controls indicators interval={6000} autoPlay={true}/>
           </div>
+
+          <div className='skill-container'>
           <Skills />
+          </div>
+
           <div className='education-background'>
           <Education />
           </div>
