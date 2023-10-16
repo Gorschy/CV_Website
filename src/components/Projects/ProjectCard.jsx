@@ -1,6 +1,6 @@
 import React from 'react';
 import "./ProjectCard.css";
-import GitHubIcon from './Assets/githugb.svg';
+import Github from '../../assets/github.svg';
 import Redirect from './Assets/redirect-website.svg';
 import Download from './Assets/download.svg';
 
@@ -12,7 +12,7 @@ const ProjectCard = ({ title, description, link, tags, githubLink, linkType}) =>
         <p>{description}</p>
         <div className="icon-container">
           <a href={githubLink} target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
-              <img src={GitHubIcon} alt="GitHub" />
+              <img src={Github} alt="GitHub" />
           </a>
           {linkType === "redirect" && (
             <a href={link} target="_blank" rel="noopener noreferrer" aria-label="Redirect Link">

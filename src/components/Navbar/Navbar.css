@@ -2,63 +2,73 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  height: 5vh;
-}
-  
-.navbar__buttons {
-  display: flex;
-}
-
-.navbar__buttons button {
-  margin-right: 1rem;
-}
-
-.navbar__buttons button:last-child {
-  margin-right: 0;
-}
-
-button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: clamp(12px, .85vw, 18px); /* Minimum: 12px, Preferred: .85vw, Maximum: 18px */
-}
-
-svg {
-  font-size: clamp(20px, 1.5vw, 30px); /* Minimum: 20px, Preferred: 1.5vw, Maximum: 30px */
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
-  transition: transform 0.2s ease-out;
-}
-
-svg:hover {
-  transform: translateY(-5px);
-}
-
-.navbar-item {
-  position: relative;
-  display: inline-block;
-  margin-left: 1rem;
-  color: var(--active-text-color);
-}
-
-.navbar-item::after {
-  content: "";
-  position: absolute;
+  margin: 1vw;
+  position: fixed;
+  top: 0;
   left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background-color: var(--active-highlight-color);
-  transition: width 0.2s ease-out;
+  right: 0;
 }
 
-.navbar-item:hover::after {
+.highlight {
+  color: var(--green);
+}
+
+.nav-icon {
+  width: 48px;
+  height: 48px;
+}
+
+button, span {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.nav-links {
+  color: var(--lightest-slate);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 1vw;
+  position: relative;
+  overflow: hidden; 
+}
+
+.resume-button {
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  cursor: pointer;
+  margin-right: 1vw;
+  border-radius: 4px;
+  padding: 0.75rem 1.3rem;
+  transition: 0.25s;
+}
+
+.resume-button:hover {
+  outline: none;
+  box-shadow: 3px 3px 0 0 var(--green);
+  transform: translate(-4px, -4px);
+}
+
+.nav-links::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: var(--green);
+  transition: width 0.3s ease;
+}
+
+.nav-links:hover::after {
   width: 100%;
 }
 
-.navbar a {
-  color: var(--active-highlight-color);
+.navbar-container {
+  transition: transform 0.3s ease-out;
 }
-  
+
+.navbar-hide {
+  transform: translateY(-100%);
+}

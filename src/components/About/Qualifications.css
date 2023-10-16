@@ -1,0 +1,17 @@
+.bachelors-img {
+    width: 50%;
+    height: auto;
+    max-width: 50%;  /* This ensures the image doesn't grow beyond its original size */
+    min-width: 320px;
+    min-height: 425px;
+}
+
+.qualification-container {
+    margin-left: 10vw;
+
+}
+
+.qualification-text {
+    width: 75%;
+    margin: 5vh;
+}

@@ -1,0 +1,49 @@
+.about {
+    margin-left: 5vw;
+    margin-bottom: 10vh;
+}
+
+.about-heading {
+    margin-right: 10px;  /* Adjust as needed */
+}
+
+.about-content {
+    max-width: 65%;
+    margin: 5vh;
+}
+
+.about-content p {
+    margin: 5%;
+}
+
+.dot-point-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2.5vh;
+    margin-left: 2.5vw; 
+}
+
+.dot-point-container ul {
+    margin-right: 2vw;
+}
+
+.dot-point-container ul {
+    list-style-type: none; /* This removes the default bullet points */
+    padding-left: 0; /* This removes the default padding */
+}
+
+.dot-point-container li {
+    color: var(--slate); /* Color for the text from your custom property */
+    position: relative; /* To position the custom bullet relative to the li */
+    padding-left: 1.5em; /* Provide space for the custom bullet */
+}
+
+.dot-point-container li::before {
+    content: "•"; /* Use a dot as content */
+    color: var(--green); /* Color for the bullet point from your custom property */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the dot to the text */
+    font-size: 1.2em; /* Size of the bullet point */
+}

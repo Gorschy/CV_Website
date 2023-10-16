@@ -1,27 +1,29 @@
 import "./global.css";
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-import Projects from "./pages/Projects/Projects";
-import Footer from "./components/Footer/footer";
+import Landing from "./components/Home/Landing";
+import About from "./components/About/About";
+import Qualifications from "./components/About/Qualifications";
+import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer/Footer";
+import Bottom from "./components/Bottom/Bottom";
+
+
 
 function App() {
   return (
     <div className="site">
+      <Navbar />
       <div className="content">
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
-        </Router>
+        <Landing />
+        <About />
+        <Qualifications />
+        <Projects />
       </div>
       <Footer />
+      <Bottom />
     </div>
+    
   );
 }
 

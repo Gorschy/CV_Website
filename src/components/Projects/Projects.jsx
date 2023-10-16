@@ -59,7 +59,13 @@ const Projects = () => {
 
 
   return (
-    <div className="project-page">
+
+
+    <div>
+      <div className="heading-container">
+        <h3 className="heading"><span className='highlight'>03. </span> Projects I've Worked On</h3>
+      </div>
+      <div className="project-page">
       {projects.map((project, index) => (
         <ProjectCard 
           key={index} 
@@ -72,6 +78,7 @@ const Projects = () => {
           linkType={project.linkType}
         />
       ))}
+    </div>
     </div>
   );
 

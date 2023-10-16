@@ -1,0 +1,54 @@
+/* Common styles for both footers */
+.left-footer, .right-footer {
+    width: 40px;
+    position: fixed;
+    bottom: 5vh;  /* this will ensure 5vh gap from the bottom */
+    height: 20vh; /* Adjust this to control the height of both footers */
+    z-index: 10;
+    color: var(--light-slate);
+}
+
+.left-footer {
+    left: 40px;
+}
+
+.right-footer {
+    right: 40px;
+}
+
+.footer-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    color: var(--light-slate);
+}
+
+.footer-icon-wrapper li a img {
+    width: 100%; /* You can adjust this percentage based on your design needs */
+    height: auto;
+    color: var(--light-slate);
+}
+
+.email-wrapper {
+    display: flex;
+}
+
+.email-and-line {
+    display: flex;
+    flex-direction: column; /* Make the container vertical */
+}
+
+.email-wrapper a {
+    writing-mode: vertical-rl;
+    font-size: 1vh;
+}
+
+.vertical-line {
+    height: 5vh; /* Adjust this if needed, based on the reference height above */
+    width: 1px;
+    background-color: var(--light-slate);
+    margin: 0.5vh; /* Space between email and the line, adjust as needed */
+}
