@@ -33,7 +33,7 @@ const Qualifications = () => {
           I've recieved a <a>Bachelors of Computer Science</a> majoring in Software Engineering awarded to me by the University of Wollongong(UOW).
           <br />
           <br />
-          For my final project at UOW myself and five others collaborated with LotT to build RPP for which we recieved an 82 just 3 marks shy of a High Distinction.
+          Additionally I've furthered my education through multiple LinkedIn courses, my certificates can be found below.
         </p>
         
         
