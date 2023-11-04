@@ -1,11 +1,11 @@
 import './Footer.css'
 function Footer() {
     return(
-        <footer>
+        <div className='footer'>
             <div class="copyright">
                 <p>© 2023 NathanG, Inc.</p>
             </div>
-        </footer>
+        </div>
     );
 }
 

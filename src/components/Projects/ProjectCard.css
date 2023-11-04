@@ -1,5 +1,4 @@
 .project-card {
-
     display: flex;
     flex-direction: column; 
 
@@ -9,7 +8,7 @@
     max-width: 350px;
     min-height: 300px;
     max-height: 350px;
-
+    
     border-radius: 5px; /* Barely rounded corners */
     padding: 16px;
     margin: 16px;
