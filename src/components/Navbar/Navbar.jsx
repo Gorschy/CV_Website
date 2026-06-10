@@ -1,42 +1,39 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import "./Navbar.css";
+
+const NAV_ITEMS = ['About', 'Qualification', 'Projects', 'Contact'];
 
 function Navbar() {
     const [navbarVisible, setNavbarVisible] = useState(true);
-    const [lastScrollY, setLastScrollY] = useState(window.scrollY);
+    const lastScrollY = useRef(window.scrollY);
 
-    const handleScroll = () => {
+    const handleScroll = useCallback(() => {
         const currentScrollY = window.scrollY;
 
-        console.log(`Current Scroll: ${currentScrollY}, Last Scroll: ${lastScrollY}`); // Debug log
-
-        if (currentScrollY > lastScrollY && navbarVisible) {
-            console.log("Hiding Navbar"); // Debug log
+        if (currentScrollY > lastScrollY.current) {
             setNavbarVisible(false);
-        } else if (currentScrollY < lastScrollY && !navbarVisible) {
-            console.log("Showing Navbar"); // Debug log
+        } else {
             setNavbarVisible(true);
         }
-        setLastScrollY(currentScrollY);
-    };
+
+        lastScrollY.current = currentScrollY;
+    }, []);
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [navbarVisible, lastScrollY]);
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [handleScroll]);
 
     return (
         <div className={`navbar-container ${navbarVisible ? "" : "navbar-hide"}`}>
             <nav className="navbar">
                 <div></div>
                 <div>
-                    <button className="nav-links"><span className="highlight">01. </span> About</button>
-                    <button className="nav-links"><span className="highlight">02. </span> Qualification</button>
-                    <button className="nav-links"><span className="highlight">03. </span> Projects</button>
-                    <button className="nav-links"><span className="highlight">04. </span> Contact</button>
+                    {NAV_ITEMS.map((item, i) => (
+                        <a key={item} href={`#${item.toLowerCase()}`} className="nav-links">
+                            <span className="highlight">0{i + 1}. </span>{item}
+                        </a>
+                    ))}
                     <button className="resume-button">Resume</button>
                 </div>
             </nav>
