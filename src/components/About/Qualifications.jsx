@@ -8,7 +8,7 @@ const slides = [1, 2, 3, 4, 5, 6, 7, 8].map(
 
 const Qualifications = () => {
   return (
-    <div className='qualification-container'>
+    <div className='qualification-container' id="qualification">
       <h3 className='heading'><span className='highlight'>02. </span> My Qualifications</h3>
       
       <p className='qualification-text'>

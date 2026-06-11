@@ -55,7 +55,7 @@ const PROJECTS = [
 
 const Projects = () => {
   return (
-    <div>
+    <div id="projects">
       <div className="heading-container">
         <h3 className="heading"><span className='highlight'>03. </span> Projects I've Worked On</h3>
       </div>
